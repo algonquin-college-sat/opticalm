@@ -12,7 +12,7 @@ function _get_db_conn()
 {
     $dbconn = mysqli_connect('localhost', 'user', 'password');
     if (!$dbconn || $dbconn->select_db('dbName') === false)
-        echo "<br/><div class='infomsg'><p>Failed to connect to cst8276: " . htmlspecialchars(mysql_error()) . "</p></div>";
+        echo "<br/><div class='infomsg'><p>Failed to connect to dbName: " . htmlspecialchars(mysql_error()) . "</p></div>";
     return $dbconn;
 }
 
