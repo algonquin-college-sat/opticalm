@@ -27,6 +27,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
   }
+  
   #optiontr {
     color: gray;
     font-size: larger;
@@ -40,4 +41,20 @@ body {
     position: absolute;
     right: 6px;
   }
+
+.stressTest {
+    margin-left: 50px;
+}
+
+.formLabels {
+    color: white;
+    font-size: larger;
+    display: block;
+    margin-left: 15px;
+}
+.fields {
+    border-radius: 15px;
+    background-color: #57326d;
+    border: none
+}
   
