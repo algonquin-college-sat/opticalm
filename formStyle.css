@@ -1,60 +1,59 @@
 body {
-    background-color: #252525;
-  }
-  
-  #title {
-    margin: 15px;
-    color: white;
-    background-color: #58326d;
-    padding: 12px;
-    text-align: center;
-  }
-  #img1 {
-    margin-left: 30px;
-  }
-  .header {
-    margin-top: 25px;
-  }
-  #optionh {
-    color: gray;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-  }
-  #optionup {
-    color: gray;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-  }
-  
-  #optiontr {
-    color: gray;
-    font-size: larger;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-  }
-  .option {
-    position: relative;
-  }
-  .option:last-child {
-    position: absolute;
-    right: 6px;
-  }
+  background-color: #252525;
+}
+
+#title {
+  margin: 15px;
+  color: white;
+  background-color: #58326d;
+  padding: 12px;
+  text-align: center;
+}
+#img1 {
+  margin-left: 30px;
+}
+.header {
+  margin-top: 25px;
+}
+#optionh {
+  color: gray;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+#optionup {
+  color: gray;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+#optiontr {
+  color: gray;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+.option {
+  position: relative;
+}
+.option:last-child {
+  position: absolute;
+  right: 6px;
+}
 
 .stressTest {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .formLabels {
-    color: white;
-    font-size: larger;
-    display: block;
-    margin-left: 15px;
+  color: white;
+  font-size: larger;
+  display: block;
+  margin-left: 15px;
 }
 .fields {
-    border-radius: 15px;
-    background-color: #57326d;
-    border: none
+  border-radius: 15px;
+  background-color: #57326d;
+  border: none;
 }
-  
