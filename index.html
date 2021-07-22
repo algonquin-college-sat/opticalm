@@ -126,11 +126,14 @@
             <option>Female</option>
           </select>
         </div>
-      </form>
+      <!-- </form> -->
     </div>
 
     <br></br>
-    <form class="form-group">
+    <!-- <form class="form-group"> -->
+      <div class="form-group">
+
+      
         <div class="col-md-6">
 		<script> 
 		function saveinfo(){
@@ -156,16 +159,14 @@ var vzip = document.getElementById("inputZip").value;
 	localStorage.setItem("vzip", vzip);
 var vgender = document.getElementById("inputGender").value;
 	localStorage.setItem("vgender", vgender); 
-
-
-	
-	
-	}
+}
 
 </script>
             <a href="#" class="btn btn-primary">Back</a>
-            <a href="index1.html" class="btn btn-primary" onclick="saveinfo()">Continue</a>
+            <!-- <a href="index1.html" class="btn btn-primary" onclick="saveinfo()">Continue</a> -->
+            <button  class="btn btn-primary" type="submit" >Start Test</button>
         </div>
+      </div>
     </form>
     <div class="footer" >
       <p>Copyright © 2021 Opticalm | Powered by Opticalm</p>

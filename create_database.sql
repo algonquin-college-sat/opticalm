@@ -11,10 +11,10 @@ use cst8334;
 CREATE TABLE IF NOT EXISTS users (
 
     user_id INT AUTO_INCREMENT,
-    first_name varchar(100) NOT NULL,
-    last_name varchar(100) NOT NULL,
+    firstname varchar(100) NOT NULL,
+    lastname varchar(100) NOT NULL,
     email varchar(100) NOT NULL,
-    date varchar(100) NOT NULL,
+    dob varchar(100) NOT NULL,
     phone varchar(100) NOT NULL,
     street varchar(255) NOT NULL,
     city varchar(255) NOT NULL,

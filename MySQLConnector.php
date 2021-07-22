@@ -35,12 +35,12 @@
         public function insertUser($user){
 
             //create a prepare statement for insert ( pre -compile sql command for insertion)
-            $stmt = $this->mysqli->prepare("INSERT INTO user (firstname, lastname,dob,gender, email, phone, street, city, country, postal_code )
+            $stmt = $this->mysqli->prepare("INSERT INTO users (firstname, lastname, dob, email, phone, street, city, province, postal_code, gender )
                                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             // add parameters to prepared statement
             $stmt->bind_param
                     ("ssssssssss", $user->firstname, $user->lastname, $user->dob,  $user->gender, $user->email, $user->phone
-                    , $user->street, $user->city, $user->country, $user->postCode );
+                    , $user->street, $user->city, $user->province, $user->postCode );
             
             //print_r($stmt);
 

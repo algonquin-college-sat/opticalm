@@ -30,16 +30,16 @@
         /**
          * convert user input to php  date object
          */
-        $date = new DateTime();
-        $date->setDate($year, $month, $day );
-        $formatDate = $date->format('Y-m-d');
+        // $date = new DateTime();
+        // $date->setDate($year, $month, $day );
+        // $formatDate = $date->format('Y-m-d');
 
         //create user object
         $newUser = new User($firstname, $lastname, $formatDate, $gender, $email, $phone, $street, $city, $country, $postCode );
         //print_r($newUser);
         //echo "<br>";
         // initialize mysql connector
-        $conn = new MySQLConnector('localhost','root','','opticalm_backend','3307');
+        $conn = new MySQLConnector('localhost','root','','cst8334','3307');
 
         //opt2, abc def
         // $conn = new MySQLConnector('localhost','abc','def','opt2','3306')
