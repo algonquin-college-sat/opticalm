@@ -72,34 +72,35 @@
 
     <h2 id="header">Free Visual Stress Test</h2>
     <div class="form-group">
-      <form class="row g-3">
+      <!-- post all the form data in index.html to resultsProcessing.php -->
+      <form action="resultsProcessing.php" class="row g-3" method="POST">
         <div class="col-md-6">
           <label for="fname" class="form-label">First Name*</label>
-          <input type="text" class="form-control" id="fname" placeholder="Aurelio" required>
+          <input type="text" class="form-control" id="fname" name="fname" placeholder="Aurelio" required>
         </div>
         <div class="col-md-6">
           <label for="date" class="form-label">Date</label>
-          <input type="date" class="form-control" id="date">
+          <input type="date" class="form-control" id="date" name="date">
         </div>
         <div class="col-md-6">
           <label for="lname" class="form-label">Last Name*</label>
-          <input type="text" class="form-control" id="lname" placeholder="Cochone Ribeiro" required>
+          <input type="text" class="form-control" id="lname" name="lname"  placeholder="Cochone Ribeiro" required>
         </div>
         <div class="col-12">
           <label for="inputEmail4">Email Address*</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="coch011@algonquin.com" required>
+          <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="coch011@algonquin.com" required>
         </div>
         <div class="col-12">
           <label for="inputphone" class="form-label">Phone Number</label>
-          <input type="text" class="form-control" id="inputphone" placeholder="E.g., +1 300405000">
+          <input type="text" class="form-control" id="inputphone" name="inputphone" placeholder="E.g., +1 300405000">
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">Street Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="E.g., 42 Wallaby Way">
+          <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="E.g., 42 Wallaby Way">
         </div>
         <div class="col-md-6">
           <label for="inputCity" class="form-label">City</label>
-          <input type="text" class="form-control" id="inputCity" placeholder="E.g., Sydney">
+          <input type="text" class="form-control" id="inputCity" name="inputCity" placeholder="E.g., Sydney">
         </div>
         <div class="col-md-6">
           <label for="inputState" class="form-label">State/Province</label>
@@ -117,11 +118,11 @@
         </div> -->
         <div class="col-md-6">
           <label for="inputZip" class="form-label">Zip/Postal Code</label>
-          <input type="text" class="form-control" id="inputZip" placeholder="E.g., 2000">
+          <input type="text" class="form-control" id="inputZip" name="inputZip" placeholder="E.g., 2000">
         </div>
         <div class="col-12">
           <label for="inputGender" class="form-label">Gender</label>
-          <select id="inputGender" class="form-control" placeholder="Select Gender">
+          <select id="inputGender" class="form-control" name="inputGender" placeholder="Select Gender">
             <option selected >Male</option>
             <option>Female</option>
           </select>
