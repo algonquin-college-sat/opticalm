@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS users (
     street varchar(255) NOT NULL,
     city varchar(255) NOT NULL,
     province varchar(255) NOT NULL,
-    country varchar(255) NOT NULL,
+    country varchar(255) DEFAULT 'Canada' ,
     postal_code varchar(10) NOT NULL,
     gender varchar(10) NOT NULL,
     PRIMARY KEY(user_id)
