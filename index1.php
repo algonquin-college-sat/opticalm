@@ -1,3 +1,16 @@
+<?php
+  /**
+   * check if user id and email exist in session
+   * if they do not exist, user has not fill personal infomation
+   * and redirect user to home page
+   */
+  if(!isset($_SESSION['user_id']) || !isset($_SESSION['email'])){
+    header("Location: http://localhost:8070/opticalm");
+    die();
+  }
+
+?>
+
 <!DOCTYPE html>
 
 
