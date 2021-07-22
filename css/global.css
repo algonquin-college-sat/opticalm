@@ -86,3 +86,10 @@
   color: black;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#header {
+  color: white;
+  background-color: #662e8d;
+  text-align: center;
+  padding: 10px;
+}
