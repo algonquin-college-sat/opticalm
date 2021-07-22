@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -76,31 +78,31 @@
       <form class="col-md-6">
         <div class="form-check">
           <h6>Do you have any sensitivities to?</h6>
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" value="option1">
+          <input class="form-check-input" name = "sensitivity" type="checkbox" value="Colours, " id="defaultCheck1" value="option1">
           <label class="form-check-label" for="defaultCheck1">Colours</label>
         </div>
         <div class="form-check" >
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" value="option2" >
+          <input class="form-check-input" name = "sensitivity" type="checkbox" value="Contrast, " id="defaultCheck2" value="option2" >
           <label class="form-check-label" for="defaultCheck2">Contrast</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck3" value="option3" >
+          <input class="form-check-input" name = "sensitivity" type="checkbox" value="Flicker, " id="defaultCheck3" value="option3" >
           <label class="form-check-label" for="defaultCheck3">Flicker</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck4"value="option4" >
+          <input class="form-check-input" name = "sensitivity" type="checkbox" value="Glare, " id="defaultCheck4"value="option4" >
           <label class="form-check-label" for="defaultCheck4">Glare</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck5" value="option5">
+          <input class="form-check-input" name = "sensitivity" type="checkbox" value="Light, " id="defaultCheck5" value="option5">
           <label class="form-check-label" for="defaultCheck5">Light (bright or fluoresent</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck6"value="option6" >
+          <input class="form-check-input" name = "sensitivity" type="checkbox" value="Motion, " id="defaultCheck6"value="option6" >
           <label class="form-check-label" for="defaultCheck6">Motion</label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck7" value="option7">
+          <input class="form-check-input" name = "sensitivity" type="checkbox" value="Patterns, " id="defaultCheck7" value="option7">
           <label class="form-check-label" for="defaultCheck7">Patterns</label>
           <h6>(choose all that apply)</h6>
         </div>
@@ -138,6 +140,7 @@
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="defaultCheck15" value="option15">
             <label class="form-check-label" for="defaultCheck15">Writing</label>
+			
             <h6>(choose all that apply)</h6>
         </div>
       </form>
@@ -145,18 +148,96 @@
     <form class="form-group">
       <div class="">
         <a href="index.html" class="btn btn-primary">Back</a>
-        <a href="index2.html" class="btn btn-primary">Continue</a>
+        <a href="index2.html" class="btn btn-primary" onclick = "save()">Continue</a>
+		
       </div>
     </form>
 
     <div class="footer" >
       <p>Copyright © 2021 Opticalm | Powered by Opticalm</p>
     </div>
+	
+	<script> 
+	
+	
+	function save(){
+	
+	//Sensitivity local save
+    var checkbox1 = document.getElementById('defaultCheck1');
+       localStorage.setItem('cbColours', checkbox1.checked);
+	var checkbox2 = document.getElementById('defaultCheck2');
+       localStorage.setItem('cbContrast', checkbox2.checked);
+	var checkbox3 = document.getElementById('defaultCheck3');
+       localStorage.setItem('cbFlicker', checkbox3.checked);
+	var checkbox4 = document.getElementById('defaultCheck4');
+       localStorage.setItem('cbGlare', checkbox4.checked);
+	var checkbox5 = document.getElementById('defaultCheck5');
+       localStorage.setItem('cbLight', checkbox5.checked);
+	var checkbox6 = document.getElementById('defaultCheck6');
+       localStorage.setItem('cbMotion', checkbox6.checked);
+	var checkbox7 = document.getElementById('defaultCheck7');
+       localStorage.setItem('cbPatterns', checkbox7.checked);
+	   
+	   
+	   //Difficulties local save
+	var checkbox8 = document.getElementById('defaultCheck8');
+       localStorage.setItem('cbAttention', checkbox8.checked);
+	var checkbox9 = document.getElementById('defaultCheck9');
+       localStorage.setItem('cbBalance', checkbox9.checked);
+	var checkbox10 = document.getElementById('defaultCheck10');
+       localStorage.setItem('cbCognitive', checkbox10.checked);
+	var checkbox11 = document.getElementById('defaultCheck111');
+       localStorage.setItem('cbHeadache', checkbox11.checked);
+	var checkbox12 = document.getElementById('defaultCheck12');
+       localStorage.setItem('cbPerception', checkbox12.checked);
+	var checkbox13 = document.getElementById('defaultCheck13');
+       localStorage.setItem('cbReading', checkbox13.checked);
+	var checkbox14 = document.getElementById('defaultCheck14');
+       localStorage.setItem('cbTracking', checkbox14.checked);
+	var checkbox15 = document.getElementById('defaultCheck15');
+       localStorage.setItem('cbWriting', checkbox15.checked);
+	   
+	   
+	
+	   
+	
+};
 
+//if(checkbox1.checked){
+	//vcolours=document.getElementById("defaultCheck1").value;
+	//}else{
+	//vcolours = "";
+	
+//	var sensitivity ="";
+	//sensitivity.concat(vcolours);
+	//localStorage.setItem("Sensitivities", sensitivity);
 
-
-
-
+	//if(document.getElementById("defaultCheck1").checked){
+//*
+	//function onclickbutton(name, name1){
+	//var checkBox = document.getElementById(name).value;
+	
+	//if(checkBox.checked==true){
+	//localStorage.setItem(name1, checkBox);
+	//}else{
+	//localStorage.setItem(name1, "");
+	//}
+	//
+	//function getChecks(name){
+	//const checkboxes = document.querySelectorAll('input[name="sensitivity"]:checked');
+	//let sensitivities = [];
+	//checkboxes.forEach((checkbox) => {
+    //sensitivities.push(checkbox.value);
+	//};
+	//return sensitivities;
+//	}
+	
+	//});
+	
+	
+	
+	
+	</script>
 
 
 

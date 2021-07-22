@@ -128,7 +128,7 @@
             <input class="form-check-input" type="checkbox"  id="defaultCheck28" value="option28" >
             <label class="form-check-label" for="defaultCheck28">Stroke</label>
         </div>
-        <div class="form-check">
+       <!-- <div class="form-check"> 
             <input class="form-check-input" type="checkbox" id="defaultCheck29"value="option29" >
             <label class="form-check-label" for="defaultCheck29">Other Neurological or Neurodevelopmental Diagnosis (please fill up information below)</label>
         </div>
@@ -137,6 +137,7 @@
           <label class="form-check-label" for="defaultCheck30">Family History of (please fill up information below)</label>
           <h6>(choose all that apply)</h6>
         </div>
+		-->
         <br></br>
         <div class="col-12">
             <label for="illness"><h6>Other Neurological or Neurodevelopmental Diagnosis</h6> </label>
@@ -150,14 +151,54 @@
         <br></br>
         <div class="">
             <a href="index1.html" class="btn btn-primary">Back</a>
-            <a href="index3.html" class="btn btn-primary">Continue</a>
+            <a href="index3.html" class="btn btn-primary" onclick = "save()" >Continue</a>
         </div>
       </form>
     </div>
     <div class="footer" >
       <p>Copyright © 2021 Opticalm | Powered by Opticalm</p>
     </div>
-
+<script>
+ function save(){
+ 
+ //suffer from conditions
+ var checkbox16 = document.getElementById('defaultCheck16');
+       localStorage.setItem('cbMTBI', checkbox16.checked);
+	var checkbox17 = document.getElementById('defaultCheck17');
+       localStorage.setItem('cbConcussion', checkbox17.checked);
+    var checkbox18 = document.getElementById('defaultCheck18');
+       localStorage.setItem('cbMigraine', checkbox18.checked);
+	var checkbox19 = document.getElementById('defaultCheck19');
+       localStorage.setItem('cbEpilipsy', checkbox19.checked);
+	var checkbox20 = document.getElementById('defaultCheck20');
+       localStorage.setItem('cbSpld', checkbox20.checked);
+	var checkbox21 = document.getElementById('defaultCheck21');
+       localStorage.setItem('cbADHD', checkbox21.checked);
+	var checkbox22 = document.getElementById('defaultCheck22');
+       localStorage.setItem('cbASD', checkbox22.checked);
+	var checkbox23 = document.getElementById('defaultCheck23');
+       localStorage.setItem('cbAnxiety', checkbox23.checked);
+	var checkbox24 = document.getElementById('defaultCheck24');
+       localStorage.setItem('cbChronFatigue', checkbox24.checked);
+	var checkbox25 = document.getElementById('defaultCheck25');
+       localStorage.setItem('cbVisSnow', checkbox25.checked);
+	var checkbox26 = document.getElementById('defaultCheck26');
+       localStorage.setItem('cbMS', checkbox26.checked);
+	var checkbox27 = document.getElementById('defaultCheck27');
+       localStorage.setItem('cbSensoryProcessingDis', checkbox27.checked);
+	var checkbox28 = document.getElementById('defaultCheck28');
+       localStorage.setItem('cbStroke', checkbox28.checked);
+	   
+	//other illness   
+	var vOther = document.getElementById("illness").value;
+	localStorage.setItem("otherillness", vOther);   
+	//family history
+	var vFamilyhist = document.getElementById("family_history").value;
+	localStorage.setItem("familyHistory", vFamilyhist);
+ 
+ 
+ }
+</script>
 
 
 
