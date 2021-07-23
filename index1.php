@@ -4,9 +4,14 @@
    * if they do not exist, user has not fill personal infomation
    * and redirect user to home page
    */
+  session_start();
+ // echo $_SESSION['user_id']." ".$_SESSION['email'];
+
   if(!isset($_SESSION['user_id']) || !isset($_SESSION['email']) ){
     header("Location:http://". $_SERVER['HTTP_HOST']."/opticalm");
     die();
+  }else{
+    echo "<script> alert('Welcome to the test, ".$_SESSION['fn']." ".$_SESSION['ln']."')</script>";
   }
   // echo $_SERVER['HTTP_HOST'];
 

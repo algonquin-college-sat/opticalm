@@ -38,7 +38,7 @@
 
         //create user object
         $newUser = new User($firstname, $lastname, $dob, $gender, $email, $phone, $street, $city, $province, $postCode );
-        print_r($newUser);
+        //print_r($newUser);
         //print_r($newUser);
         //echo "<br>";
         // initialize mysql connector
@@ -50,13 +50,19 @@
         //save user to db
         $returnUser = $conn->insertUser($newUser);
 
-        print_r($returnUser);
+        //print_r($returnUser);
 
         // if saved successfully, one row will affected ( one row is inserted)
-        // if( $returnUser != null){
-        //     //show alert dialogue box
-        //    // echo "<script> alert('Welcome to the test, ". $firstname."')</script>";
-        // }
+        if( $returnUser != null){
+            //show alert dialogue box
+            // echo "<script> alert('Welcome to the test, ". $returnUser->firstname."')</script>";
+            session_start();
+            $_SESSION['user_id'] = $returnUser->user_id;
+            $_SESSION['email'] = $returnUser->email;
+            $_SESSION['fn'] = $returnUser->firstname;
+            $_SESSION['ln'] = $returnUser->lastname;
+            header("Location:http://". $_SERVER['HTTP_HOST']."/opticalm/index1.php");
+        }
 
     }else{
         echo "404";

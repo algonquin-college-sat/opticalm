@@ -40,13 +40,13 @@
             // add parameters to prepared statement
             $stmt->bind_param
                     ("ssssssssss", $user->firstname, $user->lastname, $user->dob, $user->email, $user->phone
-                    , $user->street, $user->city, $user->country, $user->postCode,  $user->gender );
+                    , $user->street, $user->city, $user->province, $user->postCode,  $user->gender );
             
             //print_r($stmt);
 
             $stmt->execute();
 
-            print_r($stmt);
+            //print_r($stmt);
             // return how many rows are affected, should be one if insert sucessfully
            if($stmt->affected_rows == 1){
                $user->user_id = $stmt->insert_id;
