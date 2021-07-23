@@ -22,5 +22,6 @@ CREATE TABLE IF NOT EXISTS users (
     country varchar(255) DEFAULT 'Canada' ,
     postal_code varchar(10) NOT NULL,
     gender varchar(10) NOT NULL,
+    test_id varchar(10) NOT NULL,
     PRIMARY KEY(user_id)
 )

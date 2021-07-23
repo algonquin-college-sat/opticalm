@@ -4,7 +4,7 @@
    * if they do not exist, user has not fill personal infomation
    * and redirect user to home page
    */
-  if(!isset($_SESSION['user_id']) || !isset($_SESSION['email'])){
+  if(!isset($_SESSION['user_id']) || !isset($_SESSION['email']) ){
     header("Location:http://". $_SERVER['HTTP_HOST']."/opticalm");
     die();
   }
