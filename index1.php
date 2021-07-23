@@ -1,5 +1,8 @@
 <?php
 print_r($_POST);
+session_start();
+
+$_SESSION['POST'] = $_POST; #Copy _POST to _SESSION
 ?>
 
 <!DOCTYPE html>
