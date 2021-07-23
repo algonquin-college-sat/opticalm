@@ -2,7 +2,24 @@
 print_r($_POST);
 session_start();
 
-$_SESSION['POST'] = $_POST; #Copy _POST to _SESSION
+ /**
+   * check if user id and email exist in session
+   * if they do not exist, user has not fill personal infomation
+   * and redirect user to home page
+   */
+  session_start();
+ // echo $_SESSION['user_id']." ".$_SESSION['email'];
+
+  if(!isset($_SESSION['user_id']) || !isset($_SESSION['email']) ){
+    header("Location:http://". $_SERVER['HTTP_HOST']."/opticalm");
+    die();
+  }else{
+    echo "<script> alert('Welcome to the test, ".$_SESSION['fn']." ".$_SESSION['ln']."')</script>";
+  }
+if(isset($_POST)){
+  $_SESSION['POST'] = $_POST; #Copy _POST to _SESSION
+}
+
 ?>
 
 <!DOCTYPE html>
