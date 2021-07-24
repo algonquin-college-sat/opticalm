@@ -1,6 +1,10 @@
-
+/* create database */
 DROP DATABASE IF EXISTS cst8334;
 CREATE DATABASE IF NOT EXISTS cst8334;
+
+/* Create user*/
+CREATE USER 'opticalm'@'%' IDENTIFIED BY 'strongpassword';
+GRANT ALL PRIVILEGES ON * . * TO 'opticalm'@'%';
 
 /* use database cst8334*/
 use cst8334;

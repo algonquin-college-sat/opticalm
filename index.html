@@ -76,19 +76,19 @@
       <form action="resultsProcessing.php" class="row g-3" method="POST">
         <div class="col-md-6">
           <label for="fname" class="form-label">First Name*</label>
-          <input type="text" class="form-control" id="fname" name="fname" placeholder="Aurelio" required>
+          <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required>
         </div>
         <div class="col-md-6">
-          <label for="date" class="form-label">Date</label>
+          <label for="date" class="form-label">Date of birth</label>
           <input type="date" class="form-control" id="date" name="date">
         </div>
         <div class="col-md-6">
           <label for="lname" class="form-label">Last Name*</label>
-          <input type="text" class="form-control" id="lname" name="lname"  placeholder="Cochone Ribeiro" required>
+          <input type="text" class="form-control" id="lname" name="lname"  placeholder="Last Name" required>
         </div>
         <div class="col-12">
           <label for="inputEmail4">Email Address*</label>
-          <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="coch011@algonquin.com" required>
+          <input type="email" class="form-control" id="inputEmail4" name="inputEmail4" placeholder="email@domain.com" required>
         </div>
         <div class="col-12">
           <label for="inputphone" class="form-label">Phone Number</label>
@@ -134,9 +134,9 @@
     <!-- <form class="form-group"> -->
       <div class="form-group">
 
-      
+
         <div class="col-md-6">
-		<script> 
+		<script>
 		function saveinfo(){
 var vfname = document.getElementById("fname").value;
 	localStorage.setItem("vfname", vfname);
@@ -159,7 +159,7 @@ var vcountry = document.getElementById("inputCountry").value;
 var vzip = document.getElementById("inputZip").value;
 	localStorage.setItem("vzip", vzip);
 var vgender = document.getElementById("inputGender").value;
-	localStorage.setItem("vgender", vgender); 
+	localStorage.setItem("vgender", vgender);
 }
 
 </script>

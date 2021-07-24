@@ -9,7 +9,7 @@
     if( isset($_POST)){
         // echo "POST ..";
         //print_r($_POST);
-        
+
         /**
          * get data from post request
          */
@@ -30,7 +30,7 @@
 
         //$newUser = new User($firstname);
         /**
-         * convert user input to php  date object
+         * convert user input to php date object
          */
         // $date = new DateTime();
         // $date->setDate($year, $month, $day );
@@ -42,7 +42,8 @@
         //print_r($newUser);
         //echo "<br>";
         // initialize mysql connector
-        $conn = new MySQLConnector('localhost','root','','cst8334','3307');
+        //$conn = new MySQLConnector('localhost','root','','cst8334','3307');
+        $conn = new MySQLConnector('localhost', 'opticalm', 'strongpassword', 'cst8334', '3307');
 
         //opt2, abc def
         // $conn = new MySQLConnector('localhost','abc','def','opt2','3306')
