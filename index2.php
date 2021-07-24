@@ -1,8 +1,9 @@
 <?php
-print_r($_POST);
 session_start();
+echo '<pre>' . print_r($_SESSION, TRUE) . '</pre>';
+echo '<pre>' . print_r($_POST, TRUE) . '</pre>';
 
-var_dump($_SESSION);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +22,7 @@ var_dump($_SESSION);
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/main.css">
-  <!-- Tablet -->
-  <link rel="stylesheet" media="(max-width:768px)" href="css/tablet.css" />
-  <link rel="stylesheet" media="(max-width:500px)" href="css/mobile.css" />
+
 </head>
 
 <body>
