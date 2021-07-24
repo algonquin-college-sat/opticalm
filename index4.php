@@ -70,13 +70,20 @@
     <?php
     session_start();
 
+    if (!empty($_POST['symptoms'])) {
+        $_SESSION['symptoms'] = implode(",",  $_POST['symptoms']);
+    }
 
-    // echo '<pre>';
-    // print_r($_POST);
-    // echo '</pre>';
-    // echo '<pre>';
-    // print_r($_SESSION);
-    // echo '</pre>';
+    echo "<table>";
+
+    foreach ($_POST as $key => $value) {
+        echo "<tr><td>";
+        echo "$key => ";
+        echo "$value";
+        echo "</td></tr>";
+    }
+    echo "</table>"
+
 
 
     ?>

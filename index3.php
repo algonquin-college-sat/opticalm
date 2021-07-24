@@ -82,58 +82,58 @@ if (!empty($_POST['conditions'])) {
 			<br></br>
 			<h6>1) Do you see any of the following in the words or letters?</h6>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck31" value="Blur">
+				<input class="form-check-input" type="checkbox" id="defaultCheck31" value="Blur" name="symptoms[]">
 				<label class="form-check-label" for="defaultCheck31">Blur</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck32" value="Double">
+				<input class="form-check-input" type="checkbox" id="defaultCheck32" value="Double" name="symptoms[]">
 				<label class="form-check-label" for="defaultCheck32">Double</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck33" value="Fade">
+				<input class="form-check-input" type="checkbox" id="defaultCheck33" value="Fade" name="symptoms[]">
 				<label class="form-check-label" for="defaultCheck33">Fade</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck34" value="Move">
+				<input class="form-check-input" type="checkbox" id="defaultCheck34" value="Move" name="symptoms[]">
 				<label class="form-check-label" for="defaultCheck34">Move</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck35" value="Shake">
+				<input class="form-check-input" type="checkbox" id="defaultCheck35" value="Shake" name="symptoms[]">
 				<label class="form-check-label" for="defaultCheck35">Shake</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck36" value="Shimmer">
+				<input class="form-check-input" type="checkbox" id="defaultCheck36" value="Shimmer" name="symptoms[]">
 				<label class="form-check-label" for="defaultCheck36">Shimmer</label>
 				<h6>(choose all that apply)</h6>
 			</div>
 			<br></br>
 			<h6>2) Is there any movement on the page or behind the text?</h6>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck37" value="1" name="Movement">
+				<input class="form-check-input" type="checkbox" id="defaultCheck37" value="Yes" name="movement on the page or behind the text">
 				<label class="form-check-label" for="defaultCheck37">Yes</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck38" value="0" name="Movement">
+				<input class="form-check-input" type="checkbox" id="defaultCheck38" value="No" name="movement on the page or behind the text">
 				<label class="form-check-label" for="defaultCheck38">No</label>
 			</div>
 			<br></br>
 			<h6>3) Do you see colours or lights on the page?</h6>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck39" value="1" name="clop">
+				<input class="form-check-input" type="checkbox" id="defaultCheck39" value="Yes" name="see colours or lights on the page">
 				<label class="form-check-label" for="defaultCheck39">Yes</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck40" value="0" name="clop">
+				<input class="form-check-input" type="checkbox" id="defaultCheck40" value="No" name="see colours or lights on the page">
 				<label class="form-check-label" for="defaultCheck40">No</label>
 			</div>
 			<br></br>
 			<h6>4) Is the page uncomfortable to look at?</h6>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck41" value="1" name="uncomfortable">
+				<input class="form-check-input" type="checkbox" id="defaultCheck41" value="Yes" name="page uncomfortable to look at">
 				<label class="form-check-label" for="defaultCheck41">Yes</label>
 			</div>
 			<div class="form-check">
-				<input class="form-check-input" type="checkbox" id="defaultCheck42" value="0" name="uncomfortable">
+				<input class="form-check-input" type="checkbox" id="defaultCheck42" value="No" name="page uncomfortable to look at">
 				<label class="form-check-label" for="defaultCheck42">No</label>
 
 			</div>
