@@ -28,6 +28,7 @@ $_SESSION['inputState'] = $_POST['inputState'];
 $_SESSION['inputCountry'] = $_POST['inputCountry'];
 $_SESSION['inputZip'] = $_POST['inputZip'];
 $_SESSION['inputGender'] = $_POST['inputGender'];
+$_SESSION['inputphone'] = $_POST['inputphone'];
 
 
 
