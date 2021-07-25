@@ -119,7 +119,7 @@ $_SESSION['inputphone'] = $_POST['inputphone'];
       </div>
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="Light" id="defaultCheck5" name="sensitivites[]" />
-        <label class="form-check-label" for="defaultCheck5">Light (bright or fluoresent</label>
+     <label class="form-check-label" for="defaultCheck5">Light (bright or fluoresent)</label>
       </div>
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="Motion" id="defaultCheck6" name="sensitivites[]" />
