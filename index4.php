@@ -123,4 +123,7 @@
     // echo "</table>"
 
     ?>
+        <button type="submit" value="Continue" class="btn btn-primary">
+				Submit
+		</button>
       </div>
