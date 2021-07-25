@@ -153,7 +153,7 @@ if (!empty($_POST['difficulties'])) {
       <br></br>
       <a href="index2.php" class="btn btn-primary">Back</a>
       <button type="submit" value="Continue" class="btn btn-primary">
-        Contine
+        Continue
       </button>
     </form>
   </div>
