@@ -80,7 +80,7 @@
         echo  "<br>";
         echo  "<br>";
         echo "<h4> Personal Information</h4>";
-        echo "Family name:   " . $_SESSION["fname"] . "<br>";
+        echo "First name:   " . $_SESSION["fname"] . "<br>";
         echo "Last name:   " . $_SESSION["lname"] . "<br>";
         echo "Date of birth:   " . $_SESSION["date"] . "<br>";
         echo "Email:   " . $_SESSION["inputEmail"] . "<br>";
