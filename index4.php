@@ -25,6 +25,7 @@
         <div class="container">
             <nav id="navbar">
                 <ul>
+
                     <li class="nav-item">
                         <img src="assets/logo.png" alt="Visual Stress Solution" weight="70px" height="70px">
                     </li>
@@ -66,24 +67,60 @@
         <h3>Your Free Visual Stress Test Results</h3>
     </div>
 
-
+    <div class="container" >
     <?php
-    session_start();
+        session_start();
 
-    if (!empty($_POST['symptoms'])) {
-        $_SESSION['symptoms'] = implode(",",  $_POST['symptoms']);
-    }
+        if (!empty($_POST['symptoms'])) {
+            $_SESSION['symptoms'] = implode(",",  $_POST['symptoms']);
+        }
 
-    echo "<table>";
+        
+        echo  "<br>";
+        echo  "<br>";
+        echo  "<br>";
+        echo "<h4> Personal Information</h4>";
+        echo "Family name:   " . $_SESSION["fname"] . "<br>";
+        echo "Last name:   " . $_SESSION["lname"] . "<br>";
+        echo "Date of birth:   " . $_SESSION["date"] . "<br>";
+        echo "Email:   " . $_SESSION["inputEmail"] . "<br>";
+        echo "Address:   " . $_SESSION["inputAddress"] . "  " . $_SESSION["inputCity"] . "  ". $_SESSION["inputState"] . "  ". $_SESSION["inputCountry"] . "  ". $_SESSION["inputZip"] .  "<br>";
+        echo "Gender:   " . $_SESSION["inputGender"] . "<br>";
+        echo  "<br>";
 
-    foreach ($_POST as $key => $value) {
-        echo "<tr><td>";
-        echo "$key => ";
-        echo "$value";
-        echo "</td></tr>";
-    }
-    echo "</table>"
+        if(isset($_SESSION['sens']) && !empty($_SESSION['sens'])) {
+            echo "<h4> Do you have any sensitivities to?</h4>";
+            echo  $_SESSION["sens"] . "<br>";
+            echo  "<br>";
+        }    
 
+        if(isset($_SESSION['dific']) && !empty($_SESSION['dific'])) {
+            echo "<h4> Do you have difficulties with?</h4>";
+            echo  $_SESSION["dific"] . "<br>";
+            echo  "<br>";                
+        }    
 
+        if(isset($_SESSION['conditions']) && !empty($_SESSION['conditions'])) {
+            echo "<h4> Do you suffer from any of the following conditions?</h4>";
+            echo  $_SESSION["conditions"] . "<br>";
+            echo  "<br>";                
+        }    
+
+        if(isset($_SESSION['symptoms']) && !empty($_SESSION['symptoms'])) {
+            echo "<h4> Do you have sensitivities to patterns?</h4>";
+            echo  $_SESSION["symptoms"] .  "<br>";
+            echo  "<br>";                
+        }    
+
+    // echo "<table>";
+
+    // foreach ($_SESSION  as $key => $value) {
+    //     echo "<tr><td>";
+    //     echo "$key => ";
+    //     echo "$value";
+    //     echo "</td></tr>";
+    // }
+    // echo "</table>"
 
     ?>
+      </div>
