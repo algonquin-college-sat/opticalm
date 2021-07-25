@@ -168,7 +168,7 @@ $_SESSION['inputphone'] = $_POST['inputphone'];
       <div class="col-md-12">
         <a href="#" class="btn btn-primary">Back</a>
         <button type="submit" value="Continue" class="btn btn-primary">
-          Contine
+          Continue
         </button>
       </div>
     </form>
