@@ -119,6 +119,10 @@
             echo  "<br>";
         }
 
+        echo "<a href='index.html' class='btn btn-primary'>Re-take The Test</a>";
+
+
+
         if (isset($_POST['stodatabase']) && !empty($_POST['stodatabase'])) {
 
 

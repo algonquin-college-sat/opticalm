@@ -166,7 +166,7 @@ $_SESSION['inputphone'] = $_POST['inputphone'];
         <h6>(choose all that apply)</h6>
       </div>
       <div class="col-md-12">
-        <a href="#" class="btn btn-primary">Back</a>
+        <a href="index.html" class="btn btn-primary">Back</a>
         <button type="submit" value="Continue" class="btn btn-primary">
           Contine
         </button>

@@ -151,7 +151,7 @@ if (!empty($_POST['difficulties'])) {
         <input type="text" class="form-control" id="family_history" placeholder="" name="conditions[]">
       </div>
       <br></br>
-      <a href="index2.php" class="btn btn-primary">Back</a>
+      <a href="index1.php" class="btn btn-primary">Back</a>
       <button type="submit" value="Continue" class="btn btn-primary">
         Contine
       </button>
