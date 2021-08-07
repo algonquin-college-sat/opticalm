@@ -1,4 +1,13 @@
 <?php
+
+/*
+ *  Algonquin College
+ *  CST8334 - 2021S - Software Development Project
+ *  Opticalm front and back-end Visual Stress Test web form
+ *  Developed by Teams 4 and 9
+ *  Under the advising of Prof. Karan Kalsi
+ */
+
 session_start();
 
 if (!empty($_POST['sensitivites'])) {

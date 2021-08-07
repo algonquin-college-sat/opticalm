@@ -1,5 +1,13 @@
 <?php
 
+/*
+ *  Algonquin College
+ *  CST8334 - 2021S - Software Development Project
+ *  Opticalm front and back-end Visual Stress Test web form
+ *  Developed by Teams 4 and 9
+ *  Under the advising of Prof. Karan Kalsi
+ */
+
 /**
  * check if user id and email exist in session
  * if they do not exist, user has not fill personal infomation
